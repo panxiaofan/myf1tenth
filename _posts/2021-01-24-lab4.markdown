@@ -35,9 +35,17 @@ My implementation of the follow the gap node consists of these steps(each step c
   Find the angle with the largest range value within the max gap. Set steering angle to be exactly this angle.(If there are several angles with largest range value, set steering angle with the minimum absolute value).
   Velocity depends on the range value of the furthest point. you can refer to the video below.
 
-  <iframe width="700" height="400" src="https://www.youtube.com/embed/ctTJHueaTcY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="700" height="400" src="https://www.youtube.com/embed/ctTJHueaTcY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## My Lab Demo
 
 <iframe width="800" height="400" src="https://www.youtube.com/embed/4HOsg2SRabw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Related Learing Resources
+[UV F1/10 course Slides]: (https://linklab-uva.github.io/autonomousracing/assets/files/Wall_Following.pdf)
+UV F1/10 course Video: 
+<iframe width="800" height="400" src="https://www.youtube.com/embed/AywLjJTPRGQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Upenn F1/10 course Video: 
+<iframe width="800" height="400" src="https://www.youtube.com/embed/7VLYP-z9hTw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
