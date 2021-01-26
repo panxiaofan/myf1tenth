@@ -16,6 +16,8 @@ This lab is about the implementation of reactive algorithm to make the car drive
   Find maximum sequence of consecutive non-zeros among the free-space points. This is the maximum gap where the car can drive towards.
 * step 4:
   Find the best point among this maximum gap(naive way is choose the furthest point in free space and set steering angle towards it)
+  
+<img src="/myf1tenth/assets/followgap_algorithm.png">
 
 ## Lab Implementation Explanation 
 
@@ -24,7 +26,7 @@ My implementation of the follow the gap node consists of these steps(each step c
 * step 1:
   Process LaserScan and set field of view of 100 degrees(50 to the left and 50 to the right), beyond this range, set the LaserScan range value to 0(m).
   Using a sliding 1D convolution window [0.2, 0.2, 0.2, 0.2, 0.2] to make a moving average of LaserScan range.
-  Clipping all value between [0, 3]
+  Clipping all value between [0, 4]
   Find the minimum range value(closest_dist) and its angle(closest_angle) after doing above steps.  
 * step 2:
   Make for loop, calculate the distance from the end of each LaserScan to the closest point by calculating the length of the arc (closest_dist * abs(angle_i - closest_angle)). If its length of arc is less than radius of robot, set its range value to 0.
