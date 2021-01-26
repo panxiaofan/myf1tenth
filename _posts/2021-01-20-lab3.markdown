@@ -8,7 +8,7 @@ categories: F1Tenth LAB 3
 ## Introduction
 
 This lab is about the implementation of wall following algorithm to make the car drive autonomously following the left wall of the Levine Hall map. The idea is that by using two laser beams with given angles, we can calculate its distance from the wall, then obtain the Cross Track Error. By using PID controller, where the input is Cross Track Error and the output is the correction of steering angle.
-<img src="/assets/wall_following_noAC.png">
+<img src="/myf1tenth/assets/wall_following_noAC.png">
 
 However, since our f1tenth racing car is in high speed, we need to take the forward distance into consideration. In the image below, the forward distance is denoted as AC. It is a user-defined value. The smaller AC is, the shorter distance you want the car to traverse to reach the desired track(where Cross Track Error is 0).
 <img src="/assets/wall_following_AC.png">
