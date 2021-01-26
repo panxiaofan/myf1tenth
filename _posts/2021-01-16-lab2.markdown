@@ -15,7 +15,10 @@ where r<sub>i</sub> denotes the range value of each lidar beam with index i. The
 <img src="/myf1tenth/assets/aeb_planar_lidar.png">
 The time derivative of r<sub>i</sub> can be calculated as follow:
 <img src="/myf1tenth/assets/aeb_ri_dot.png">
-where v<sub>x</sub> can be derived from nav_msgs/Odometry.msg twist.twist.linear.x
+where v<sub>x</sub> can be derived from nav_msgs/Odometry.msg twist.twist.linear.x.
+Note that the definitation of beam angle:
+
+[A Good Source for Beam Angle Illustration](https://www.easy-lightbulbs.com/lighting-guides/beam-angle/#:~:text=The%20beam%20angle%20of%20a,lamps%20up%20to%20120%20degree)
 
 Since the AEB is designed for safety consideration, we should reduce false positives and avoid false negatives. I set the threshold of TTC as 0.3(s) in my experiment. If TTC is less than this threshold, the AEB is applied.
 
