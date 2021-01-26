@@ -31,7 +31,7 @@ My implementation of the wall following node consists of these steps:
 
 * step 1:
   Obtain two laser beam of LaserScan a and b, where b is normal to the x axis of the f1tenth car and in my case a is at 45 degrees from b towards front. Since we would like to make a left wall folloing, b should point towards left, which in terms of the LaserScan is +90 degree while a is +45 degree.
-  In addition, since our real f1tenth car uses the hardware Hokuyo 10LX, which has 270 degree scan field, therefore in simulation, LaserScan angle beyond [-135, 135] degree should not be used.
+  Since our real f1tenth car uses the hardware Hokuyo 10LX, which has 270 degree scan field, therefore in simulation, LaserScan angle beyond [-135, 135] degree should not be used. In addition, we also need to make sure that the two beam scan we choose is valid by filtering out all Lidar beams with inf or nan value. If the two beams accidentally have invalid range value, we simply discard them, use the closest valid beam and adjust the theta accordingly.
 * step 2:
   Use the distances a and b to calculate the angle alpha between the car’s x axis and the left wall and use alpha to find the current distance D_t to the car. 
 * step 3:
