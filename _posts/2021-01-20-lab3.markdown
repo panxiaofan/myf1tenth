@@ -11,24 +11,24 @@ This lab is about the implementation of wall following algorithm to make the car
 <img src="/myf1tenth/assets/wall_following_noAC.png">
 
 However, since our f1tenth racing car is in high speed, we need to take the forward distance into consideration. In the image below, the forward distance is denoted as AC. It is a user-defined value. The smaller AC is, the shorter distance you want the car to traverse to reach the desired track(where Cross Track Error is 0).
-<img src="/assets/wall_following_AC.png">
+<img src="/myf1tenth/assets/wall_following_AC.png">
 
 The sign relation between steering angle and the Cross Track Error is shown below. Note this is very important. 
-<img src="/assets/wall_following_sign.png">
+<img src="/myf1tenth/assets/wall_following_sign.png">
 
 The general formula of PID control is as below.
-<img src="/assets/wall_following_pid.png">
+<img src="/myf1tenth/assets/wall_following_pid.png">
 
 In my case, I found the PD controller is sufficient for this task. The PD steering controller is shown as follow.
-<img src="/assets/wall_following_pid.png">
+<img src="/myf1tenth/assets/wall_following_pid.png">
 
 When tunning the parameters for a better performance of PID controller, it is a good practice to refer to Ziegler-Nichols Method. 
-<img src="/assets/wall_following_pid_tunning.png">
+<img src="/myf1tenth/assets/wall_following_pid_tunning.png">
 
 
 ## Lab Implementation Explanation 
 
-My implementation of the follow the gap node consists of these steps(each step corresponds to that in the above algorithm):
+My implementation of the wall following node consists of these steps:
 
 * step 1:
   Process LaserScan and set field of view of 100 degrees(50 to the left and 50 to the right), beyond this range, set the LaserScan range value to 0(m).
