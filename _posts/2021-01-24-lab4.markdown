@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Follow the Gap"
-date:   2021-01-24 00:15:18 -0500
-categories: F1Tenth LAB 4
+excerpt: "Implementing one reactive planning method: follow the gap."
 ---
 ## Introduction
 

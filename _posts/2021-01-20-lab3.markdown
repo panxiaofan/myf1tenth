@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Wall Following"
-date:   2021-01-20 00:15:18 -0500
-categories: F1Tenth LAB 3
+excerpt: "Autonomous navigation using wall following."
 ---
 
 ## Introduction
