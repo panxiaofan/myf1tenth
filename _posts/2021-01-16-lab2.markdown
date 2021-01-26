@@ -11,7 +11,7 @@ This lab is about using Lidar and Odometry to compute TTC(Time to Collision) to 
 
 The key for making AEB is computing TTC and set a reasonable threshold of TTC. The formula of TTC is shown below:
 <img src="/myf1tenth/assets/aeb_ttc.png">
-where r<sub>i</sub> denotes the range value of each lidar beam with index i. This planar Lidar and also the message definition of LaserScan is shown below.
+where r<sub>i</sub> denotes the range value of each lidar beam with index i. The planar Lidar and also the message definition of LaserScan is shown below.
 <img src="/myf1tenth/assets/aeb_planar_lidar.png">
 The time derivative of r<sub>i</sub> can be calculated as follow:
 <img src="/myf1tenth/assets/aeb_ri_dot.png">

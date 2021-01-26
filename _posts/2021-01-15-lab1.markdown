@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "AV Sensor Intro"
+excerpt: "Explore various sensors on typical Autonomous Vehicle."
+---
+## Introduction
+
+This page gives an overview of various sensors using on AV. It lists their typical hardware, working principle, advantages and disadvantages. Since my ultimate goal is to realize collaborative perception for our autonomous driving f1tenth car, it is important to get knowledge of different sensors used on AV in order to make a better choice.
+<img src="/myf1tenth/assets/sensor_all.png">
+<img src="/myf1tenth/assets/sensor_list.png">
+
+## RGB-D Camera 
+
+<img src="/myf1tenth/assets/sensor_rgbd.png">
+
+## Stereo Camera 
+
+<img src="/myf1tenth/assets/sensor_stereo.png">
+
+## Monocular Camera(map to depth)
+
+<img src="/myf1tenth/assets/sensor_mono.png">
+
+## RADAR 
+
+<img src="/myf1tenth/assets/sensor_radar.png">
+
+## Ultrasonic Proximity Sensor 
+
+<img src="/myf1tenth/assets/sensor_sonic.png">
+
+## Planar LIDAR 
+
+<img src="/myf1tenth/assets/sensor_planar_lidar.png">
+
+## Solid-State LIDAR
+
+<img src="/myf1tenth/assets/sensor_sslidar.png">
+
+## Related Learning Resources
+
+Upenn F1/10 course Video: 
+<iframe width="800" height="400" src="https://www.youtube.com/embed/jZR3tk9IWlY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
