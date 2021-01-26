@@ -15,7 +15,7 @@ Since I have worked with ROS before, so I wouldn't expand too much on intro of R
 * note 4:
   There is no need to run catkin_make if you write the node in .py file. However, you need to make sure it is executable my using the command: chmod +x your_node.py
 * note 5:
-  If not  specified the path when using rosbag record, the files are saved under the default directory ~/.ros
+  If not  specified the path when using rosbag record in the launch file, the files are saved under the default directory ~/.ros
 * note 6:
   Using -o will output a bag file with the timestamp at the location you specify; Using -O will output a bag file without the timestamp at the location you specify  
 * note 7:
