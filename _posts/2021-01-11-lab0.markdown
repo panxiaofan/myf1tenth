@@ -6,15 +6,24 @@ excerpt: "Brief Notes for Review ROS."
 ## Brief Notes
 Since I have worked with ROS before, so I wouldn't expand too much on intro of ROS. After accomplishing lab 1 using both C++ and Python and going through all the written questions in the lab 1, I have the following notes:
 
-*1. CmakeLists is a generator of build systems, it can produce MakeFiles; while Make(or rather MakeFiles) is a build system which drives the compiler and other build tools to build your code.
-*2. source ~/overlay_ws/devel/setup.bash is to overlay your package in the overlay_ws workspace on top of the packages installed in /opt/ros/melodic. It is a good practice to check the ROS_PACKAGE_PATH if errors like pakage not found was throwed.
-*3. There is no spinOnce in rospy, only in roscpp
-*4. There is no need to run catkin_make if you write the node in .py file. However, you need to make sure it is executable my using the command: chmod +x your_node.py
-*5. If not  specified the path when using rosbag record, the files are saved under the default directory ~/.ros.
-*6. Using -o will output a bag file with the timestamp at the location you specify; Using -O will output a bag file without the timestamp at the location you specify
-*7. A good pratice for dealing with [LaserScan info](https://www.ros.org/reps/rep-0117.html)
-<img src="/myf1tenth/assets/ros_laserscan.png">
-*8. Continue updating with progress of the f1tenth project
+* note 1:
+  CmakeLists is a generator of build systems, it can produce MakeFiles; while Make(or rather MakeFiles) is a build system which drives the compiler and other build tools to build your code.
+* note 2:
+  source ~/overlay_ws/devel/setup.bash is to overlay your package in the overlay_ws workspace on top of the packages installed in /opt/ros/melodic. It is a good practice to check the ROS_PACKAGE_PATH if errors like pakage not found was throwed.
+* note 3:
+  There is no spinOnce in rospy, only in roscpp
+* note 4:
+  There is no need to run catkin_make if you write the node in .py file. However, you need to make sure it is executable my using the command: chmod +x your_node.py
+* note 5:
+  If not  specified the path when using rosbag record, the files are saved under the default directory ~/.ros
+* note 6:
+  Using -o will output a bag file with the timestamp at the location you specify; Using -O will output a bag file without the timestamp at the location you specify  
+* note 7:
+  A good pratice for dealing with [LaserScan info](https://www.ros.org/reps/rep-0117.html)
+  <img src="/myf1tenth/assets/ros_laserscan.png">
+* note 8:  
+  Continue updating with progress of the f1tenth project
+
 
 
 
