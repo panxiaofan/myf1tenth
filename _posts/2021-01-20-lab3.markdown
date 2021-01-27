@@ -35,7 +35,7 @@ My implementation of the wall following node consists of these steps:
 * step 2:
   Use the distances a and b to calculate the angle alpha between the car’s x axis and the left wall and use alpha to find the current distance D_t to the car. 
 * step 3:
-  Self-Define the length of L(also AC), then we can obtain D_t+1.
+  Self-Define the length of L(also AC), then we can obtain D_t+1. Note that L is a key parameter to tune. 
 * step 4:
   Calcuate the Cross Track Error with lookahead distance considered, feed it into PID controller, the output is the correction of the steering angle. Notice the negative sign in front of the angle correction which aligns what we discussed about the sign relationship between steering angle and error.
 
