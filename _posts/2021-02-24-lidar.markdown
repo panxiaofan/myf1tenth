@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "Lidar-based navigation driving on F1tenth car"
+excerpt: "Tested previously built ROS node(based on F1Tenth Sim) on real F1tenth car"
+---
+## Introduction
+
+This part is about my experience working with Hokuyo UTM-30LX Lidar and tested my Lidar-based navigation ROS nodes on the physical F1tenth car. 
+
+The primitive car we got:
+<img src="/myf1tenth/assets/lidar_primitive_car.jpg">
+Hardware installation:
+<img src="/myf1tenth/assets/lidar_car.jpg">
+
+## Real Sim Gap
+* 1:
+  The Hokuyo UTM-30LX Lidar only got 270 degrees. By defult, the scan range setting in the Hokuyo Node is [-90,90] degrees which can't satisfy my need when implementing the wall following algorithm. Therefore, I need to change its setting to [-135,135] degrees. In addition, in F1Tenth Simulator, I was able to work with a simulated Lidar which is of 360 degrees. However, when dealing with hardware, I need to pay attention to the limitation of the physical sensors.
+* 2:
+  To communicate my remote computer to the robot computer, I used ssh. The image topics can not be transmitted to the remote computer by simple ssh. I need to export my ROS Master and ROS URL.
+* 3:  
+  Continue Updating
+
+  
+## Follow the Wall Demo
+The reactive planning node is written with rospy.
+<iframe width="800" height="400" src="https://www.youtube.com/embed/7Gd6y3hJ834" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Follow the Gap Demo
+<iframe width="800" height="400" src="https://www.youtube.com/embed/IyY78hm6xZI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
