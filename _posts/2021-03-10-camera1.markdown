@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Simple Lane Line Following with camera"
+title:  "Simple Lane Line Following with Camera on F1Tenth Car"
 excerpt: "Implementing simple lane line following on F1tenth car using Logitech monocular RGB camera."
 ---
 ## Introduction
@@ -46,13 +46,14 @@ My implementation of the simple lane following using camera consists of these st
   <img src="/myf1tenth/assets/camera_rect_1.png">
   <img src="/myf1tenth/assets/camera_rect_2.png">
 
-  It seems that our monocular camera doesn't have much distortion. After the camera calibration, we should see all parral lines keep straight in the calibrated images.
+  It seems that our monocular camera doesn't have much distortion. After the camera calibration, we should see all parallel lines keep straight in the calibrated images.
 
 * step 4:
   Our original image from the web camera is in the RGB color space. To make the lane line more distinguishable, I chose to conver the color space from RGB to HSV color space, then tune a lower and higher threshold of the HSV value and apply this condition to get a binary mask of the oirginal image.
   
   Original calibrated color image
   <img src="/myf1tenth/assets/camera_simple_lane_line_rgb.png">
+  
   Mask using HSV color space
   <img src="/myf1tenth/assets/camera_simple_lane_line_mask.png">
 

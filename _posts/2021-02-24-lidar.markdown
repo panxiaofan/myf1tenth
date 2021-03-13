@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lidar-based navigation driving on F1tenth car"
+title:  "Lidar-based navigation driving on F1tenth Car"
 excerpt: "Tested previously built ROS node(based on F1Tenth Sim) on real F1tenth car"
 ---
 ## Introduction
