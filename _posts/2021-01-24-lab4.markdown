@@ -19,7 +19,7 @@ This lab is about the implementation of reactive algorithm to make the car drive
   
 <img src="/myf1tenth/assets/followgap_algorithm.png">
 
-## Lab Implementation Explanation 
+## Implementation Explanation 
 
 My implementation of the follow the gap node consists of these steps(each step corresponds to that in the above algorithm):
 
@@ -38,7 +38,7 @@ My implementation of the follow the gap node consists of these steps(each step c
 
 <iframe width="700" height="400" src="https://www.youtube.com/embed/ctTJHueaTcY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## My Lab 4 Demo
+## My Demo
 
 The reactive planning node is written with rospy.
 <iframe width="800" height="400" src="https://www.youtube.com/embed/4HOsg2SRabw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

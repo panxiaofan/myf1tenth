@@ -20,7 +20,7 @@ This post is about using the Logitech monocular RGB camera to make simple lane l
   Set and tune the steering angle based on the edge detection result
   
 
-## Lab Implementation Explanation 
+## Implementation Explanation 
 
 My implementation of the simple lane following using camera consists of these steps(each step corresponds to that in the above algorithm):
 
@@ -53,7 +53,7 @@ My implementation of the simple lane following using camera consists of these st
   
   Original calibrated color image
   <img src="/myf1tenth/assets/camera_simple_lane_line_rgb.png">
-  
+
   Mask using HSV color space
   <img src="/myf1tenth/assets/camera_simple_lane_line_mask.png">
 

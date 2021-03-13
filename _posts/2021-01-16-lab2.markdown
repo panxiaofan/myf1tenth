@@ -7,7 +7,7 @@ excerpt: "Explore how to autonomously stop the car before collision."
 
 This lab is about using Lidar and Odometry to compute TTC(Time to Collision) to force the f1Tenth racing car to make AEB(automatic emergency brake) before hitting obstacles. This task uses LaserScan, Odometry and AckermannDriveStamped messages. It subscribes LaserScan, Odometry messages and publish AckermannDriveStamped messages for car control. 
 
-## Lab Implementation Explanation 
+## Implementation Explanation 
 
 The key for making AEB is computing TTC and set a reasonable threshold of TTC. The formula of TTC is shown below:
 <img src="/myf1tenth/assets/aeb_ttc.png">
@@ -22,7 +22,7 @@ Note that the definitation of beam angle:
 
 Since the AEB is designed for safety consideration, we should reduce false positives and avoid false negatives. I set the threshold of TTC as 0.3(s) in my experiment. If TTC is less than this threshold, the AEB is applied.
 
-## My Lab 2 Demo
+## My Demo
 This safety node is writen with roscpp
 
 <iframe width="800" height="400" src="https://www.youtube.com/embed/UI69t9RcGZE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
